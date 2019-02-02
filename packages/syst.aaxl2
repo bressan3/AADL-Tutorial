@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aadl2:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmi:id="_wMB3EP1QEeiJrsdx4E0AFg" name="syst" publicSection="#_wMB3Ef1QEeiJrsdx4E0AFg">
+  <ownedPublicSection xmi:id="_wMB3Ef1QEeiJrsdx4E0AFg">
+    <ownedClassifier xsi:type="aadl2:SystemType" xmi:id="_wMB3Ev1QEeiJrsdx4E0AFg" name="SecuritySystem">
+      <ownedComment xmi:id="_wMB3E_1QEeiJrsdx4E0AFg" body="-- We should define the system we'll be working with first&#xA;"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:SystemImplementation" xmi:id="_wMB3FP1QEeiJrsdx4E0AFg" name="SecuritySystem.with_devices">
+      <ownedComment xmi:id="_wMB3Ff1QEeiJrsdx4E0AFg" body="-- For each system and device (system component), we must define an implementation&#xA;"/>
+      <ownedComment xmi:id="_wMB3Fv1QEeiJrsdx4E0AFg" body="-- We must list all the devices declared bellow inside the &#xA;"/>
+      <ownedComment xmi:id="_wMB3F_1QEeiJrsdx4E0AFg" body="-- system using the &quot;subcomponents&quot; keyword&#xA;"/>
+      <ownedComment xmi:id="_wMB3GP1QEeiJrsdx4E0AFg" body="-- If there's a component in a different package that we need to declare&#xA;"/>
+      <ownedComment xmi:id="_wMB3Gf1QEeiJrsdx4E0AFg" body="-- in this section, we must do: this_component_name: device PackageName::DeviceName&#xA;"/>
+      <ownedComment xmi:id="_wMB3Gv1QEeiJrsdx4E0AFg" body="-- All connections in between ports are defined here (in the connections subsection)&#xA;"/>
+      <ownedRealization xmi:id="_wMB3G_1QEeiJrsdx4E0AFg" implemented="#_wMB3Ev1QEeiJrsdx4E0AFg"/>
+      <ownedPortConnection xmi:id="_wMB3HP1QEeiJrsdx4E0AFg" name="motion_conn">
+        <ownedComment xmi:id="_wMB3Hf1QEeiJrsdx4E0AFg" body="-- Format: [connection_name]: port [(device/controller)_name].[out_port_name] -> [(device/controller)_name].[in_port_name]  &#xA;"/>
+        <destination xmi:id="_wMB3Hv1QEeiJrsdx4E0AFg" context="#_wMB3Mv1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3OP1QEeiJrsdx4E0AFg"/>
+        <source xmi:id="_wMB3H_1QEeiJrsdx4E0AFg" context="#_wMB3LP1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3Qf1QEeiJrsdx4E0AFg"/>
+      </ownedPortConnection>
+      <ownedPortConnection xmi:id="_wMB3IP1QEeiJrsdx4E0AFg" name="magnetic_conn">
+        <destination xmi:id="_wMB3If1QEeiJrsdx4E0AFg" context="#_wMB3Mv1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3Of1QEeiJrsdx4E0AFg"/>
+        <source xmi:id="_wMB3Iv1QEeiJrsdx4E0AFg" context="#_wMB3L_1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3Rv1QEeiJrsdx4E0AFg"/>
+      </ownedPortConnection>
+      <ownedPortConnection xmi:id="_wMB3I_1QEeiJrsdx4E0AFg" name="camera_conn_out">
+        <destination xmi:id="_wMB3JP1QEeiJrsdx4E0AFg" context="#_wMB3MP1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3S_1QEeiJrsdx4E0AFg"/>
+        <source xmi:id="_wMB3Jf1QEeiJrsdx4E0AFg" context="#_wMB3Mv1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3Ov1QEeiJrsdx4E0AFg"/>
+      </ownedPortConnection>
+      <ownedPortConnection xmi:id="_wMB3Jv1QEeiJrsdx4E0AFg" name="alaram_conn">
+        <destination xmi:id="_wMB3J_1QEeiJrsdx4E0AFg" context="#_wMB3Mf1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3T_1QEeiJrsdx4E0AFg"/>
+        <source xmi:id="_wMB3KP1QEeiJrsdx4E0AFg" context="#_wMB3Mv1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3O_1QEeiJrsdx4E0AFg"/>
+      </ownedPortConnection>
+      <ownedPortConnection xmi:id="_wMB3Kf1QEeiJrsdx4E0AFg" name="camera_conn_in">
+        <destination xmi:id="_wMB3Kv1QEeiJrsdx4E0AFg" context="#_wMB3Mv1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3N_1QEeiJrsdx4E0AFg"/>
+        <source xmi:id="_wMB3K_1QEeiJrsdx4E0AFg" context="#_wMB3MP1QEeiJrsdx4E0AFg" connectionEnd="#_wMB3Sv1QEeiJrsdx4E0AFg"/>
+      </ownedPortConnection>
+      <ownedDeviceSubcomponent xmi:id="_wMB3LP1QEeiJrsdx4E0AFg" name="this_motion_sensor" deviceSubcomponentType="#_wMB3Pv1QEeiJrsdx4E0AFg">
+        <ownedComment xmi:id="_wMB3Lf1QEeiJrsdx4E0AFg" body="-- Each subcomponent (devices) of the system must have an inside name &#xA;"/>
+        <ownedComment xmi:id="_wMB3Lv1QEeiJrsdx4E0AFg" body="-- which in this case is &quot;this_motion_sensor&quot;&#xA;"/>
+      </ownedDeviceSubcomponent>
+      <ownedDeviceSubcomponent xmi:id="_wMB3L_1QEeiJrsdx4E0AFg" name="this_magnetic_alarm_sensor" deviceSubcomponentType="#_wMB3Rf1QEeiJrsdx4E0AFg"/>
+      <ownedDeviceSubcomponent xmi:id="_wMB3MP1QEeiJrsdx4E0AFg" name="this_camera" deviceSubcomponentType="#_wMB3Sf1QEeiJrsdx4E0AFg"/>
+      <ownedDeviceSubcomponent xmi:id="_wMB3Mf1QEeiJrsdx4E0AFg" name="this_alarm_unit" deviceSubcomponentType="#_wMB3Tv1QEeiJrsdx4E0AFg"/>
+      <ownedProcessSubcomponent xmi:id="_wMB3Mv1QEeiJrsdx4E0AFg" name="this_controller" processSubcomponentType="#_wMB3NP1QEeiJrsdx4E0AFg">
+        <ownedComment xmi:id="_wMB3M_1QEeiJrsdx4E0AFg" body="-- Processes should also be added in the subcomponents session&#xA;"/>
+      </ownedProcessSubcomponent>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:ProcessType" xmi:id="_wMB3NP1QEeiJrsdx4E0AFg" name="Controller">
+      <ownedComment xmi:id="_wMB3Nf1QEeiJrsdx4E0AFg" body="-- Process is a piece a Software in the system. In this case, our process processes the&#xA;"/>
+      <ownedComment xmi:id="_wMB3Nv1QEeiJrsdx4E0AFg" body="-- data from the devices connected to it&#xA;"/>
+      <ownedDataPort xmi:id="_wMB3N_1QEeiJrsdx4E0AFg" name="video_from_camera" direction="in"/>
+      <ownedEventPort xmi:id="_wMB3OP1QEeiJrsdx4E0AFg" name="motion_in" direction="in"/>
+      <ownedEventPort xmi:id="_wMB3Of1QEeiJrsdx4E0AFg" name="magnetic_in" direction="in"/>
+      <ownedEventPort xmi:id="_wMB3Ov1QEeiJrsdx4E0AFg" name="camera_out" direction="out"/>
+      <ownedEventPort xmi:id="_wMB3O_1QEeiJrsdx4E0AFg" name="alarm_out" direction="out"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:ProcessImplementation" xmi:id="_wMB3PP1QEeiJrsdx4E0AFg" name="Controller.with_threads">
+      <ownedRealization xmi:id="_wMB3Pf1QEeiJrsdx4E0AFg" implemented="#_wMB3NP1QEeiJrsdx4E0AFg"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceType" xmi:id="_wMB3Pv1QEeiJrsdx4E0AFg" name="MotionSensor">
+      <ownedComment xmi:id="_wMB3P_1QEeiJrsdx4E0AFg" body="-- After declaring the system and its implementation, we must declare all the &#xA;"/>
+      <ownedComment xmi:id="_wMB3QP1QEeiJrsdx4E0AFg" body="-- system's components. We must also declare an implementation for each declared component.&#xA;"/>
+      <ownedEventPort xmi:id="_wMB3Qf1QEeiJrsdx4E0AFg" name="motion_detected" direction="out">
+        <ownedComment xmi:id="_wMB3Qv1QEeiJrsdx4E0AFg" body="-- Device ports should be added in the &quot;features&quot; section of each device&#xA;"/>
+      </ownedEventPort>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceImplementation" xmi:id="_wMB3Q_1QEeiJrsdx4E0AFg" name="MotionSensor.impl">
+      <ownedRealization xmi:id="_wMB3RP1QEeiJrsdx4E0AFg" implemented="#_wMB3Pv1QEeiJrsdx4E0AFg"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceType" xmi:id="_wMB3Rf1QEeiJrsdx4E0AFg" name="MagneticAlarmSensor">
+      <ownedEventPort xmi:id="_wMB3Rv1QEeiJrsdx4E0AFg" name="alarm_set_off" direction="out"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceImplementation" xmi:id="_wMB3R_1QEeiJrsdx4E0AFg" name="MagneticAlarmSensor.impl">
+      <ownedRealization xmi:id="_wMB3SP1QEeiJrsdx4E0AFg" implemented="#_wMB3Rf1QEeiJrsdx4E0AFg"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceType" xmi:id="_wMB3Sf1QEeiJrsdx4E0AFg" name="Camera">
+      <ownedDataPort xmi:id="_wMB3Sv1QEeiJrsdx4E0AFg" name="video_stream" direction="out"/>
+      <ownedEventPort xmi:id="_wMB3S_1QEeiJrsdx4E0AFg" name="camera_on_off" direction="in"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceImplementation" xmi:id="_wMB3TP1QEeiJrsdx4E0AFg" name="Camera.impl">
+      <ownedRealization xmi:id="_wMB3Tf1QEeiJrsdx4E0AFg" implemented="#_wMB3Sf1QEeiJrsdx4E0AFg"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceType" xmi:id="_wMB3Tv1QEeiJrsdx4E0AFg" name="AlarmUnit">
+      <ownedEventPort xmi:id="_wMB3T_1QEeiJrsdx4E0AFg" name="alarm_on_off" direction="in"/>
+    </ownedClassifier>
+    <ownedClassifier xsi:type="aadl2:DeviceImplementation" xmi:id="_wMB3UP1QEeiJrsdx4E0AFg" name="AlarmUnit.impl">
+      <ownedRealization xmi:id="_wMB3Uf1QEeiJrsdx4E0AFg" implemented="#_wMB3Tv1QEeiJrsdx4E0AFg"/>
+    </ownedClassifier>
+  </ownedPublicSection>
+</aadl2:Package>

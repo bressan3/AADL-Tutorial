@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="e9febf4d-1f80-4817-bf6f-7c4bfb83609e" manual="true">
+    <element uuid="1191001d-32e7-4126-9ecd-c3e38e0c2d96">
+      <bo>
+        <seg>classifier</seg>
+        <seg>alarmunit</seg>
+      </bo>
+      <position x="232.0" y="85.0"/>
+      <size width="123.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="c7d71c9b-e123-43ff-a70e-18139738deb3">
+      <element uuid="7dff835c-da07-485e-84fc-258bbc636346">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="228.0" y="114.5"/>
+          <point x="240.0" y="114.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>alarmunit.impl</seg>
+      </bo>
+      <position x="59.0" y="85.0"/>
+      <size width="153.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="936293b8-3d61-4690-aca8-5b02c4a56553">
+      <bo>
+        <seg>classifier</seg>
+        <seg>camera</seg>
+      </bo>
+      <position x="218.0" y="38.0"/>
+      <size width="108.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="b4dc3bb6-3f49-4c61-b0b3-66091ceb4263">
+      <element uuid="0ec78438-1abb-40b0-bf62-cbff29db45e6">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="214.0" y="67.5"/>
+          <point x="226.0" y="67.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>camera.impl</seg>
+      </bo>
+      <position x="59.0" y="38.0"/>
+      <size width="139.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="5647504f-540a-4f22-9311-83e593174343">
+      <bo>
+        <seg>classifier</seg>
+        <seg>controller</seg>
+      </bo>
+      <position x="294.0" y="179.0"/>
+      <size width="123.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="1c055249-e81d-4158-870a-5a376ce2a040">
+      <element uuid="08bd51a0-ce97-44cc-aec0-20c884fa163b">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="290.0" y="208.5"/>
+          <point x="302.0" y="208.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>controller.with_threads</seg>
+      </bo>
+      <position x="59.0" y="179.0"/>
+      <size width="215.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="0ec8a701-12fc-49a3-b60f-ee422adecfa3">
+      <bo>
+        <seg>classifier</seg>
+        <seg>magneticalarmsensor</seg>
+      </bo>
+      <position x="316.0" y="273.0"/>
+      <size width="203.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="bbe58a5a-e73f-4690-84a0-de333c5343a8">
+      <element uuid="8e68a362-59e4-45ff-b601-9f8245a5e816">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="312.0" y="302.5"/>
+          <point x="324.0" y="302.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>magneticalarmsensor.impl</seg>
+      </bo>
+      <position x="59.0" y="273.0"/>
+      <size width="237.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="1861cdb6-d6ca-4874-9df8-13253ff1427c">
+      <bo>
+        <seg>classifier</seg>
+        <seg>motionsensor</seg>
+      </bo>
+      <position x="259.0" y="132.0"/>
+      <size width="147.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="61dff670-a338-431d-af78-8f06302c467a">
+      <element uuid="cccccaee-3ec2-4c2c-a140-ca566828ec51">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="255.0" y="161.5"/>
+          <point x="267.0" y="161.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>motionsensor.impl</seg>
+      </bo>
+      <position x="59.0" y="132.0"/>
+      <size width="180.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="c274de7c-8f0a-463a-b0fa-980db219118b">
+      <bo>
+        <seg>classifier</seg>
+        <seg>securitysystem</seg>
+      </bo>
+      <position x="335.0" y="226.0"/>
+      <size width="153.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <element uuid="cc94241e-bfdb-49fc-afdf-196962af1b3b">
+      <element uuid="1283e7cb-f38b-42a4-a685-7a43300b4998">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="331.0" y="255.5"/>
+          <point x="343.0" y="255.5"/>
+        </bendpoints>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>securitysystem.with_devices</seg>
+      </bo>
+      <position x="59.0" y="226.0"/>
+      <size width="256.0" height="35.0"/>
+      <contentFilters>
+        <filter>generalizations</filter>
+      </contentFilters>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>syst</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="531.0" height="320.0"/>
+    <contentFilters>
+      <filter>classifiers</filter>
+    </contentFilters>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>syst</seg>
+    </context>
+  </config>
+</diagram:Diagram>

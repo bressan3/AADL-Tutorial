@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmi:id="_uPi8QP1QEeiJrsdx4E0AFg" name="SecuritySystem_with_devices_Instance" category="system">
+  <componentInstance xmi:id="_uPyz4P1QEeiJrsdx4E0AFg" name="this_motion_sensor" category="device">
+    <featureInstance xmi:id="_uP0pEP1QEeiJrsdx4E0AFg" name="motion_detected" srcConnectionInstance="_uQMcgP1QEeiJrsdx4E0AFg" category="eventPort" direction="out">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_uP1QIP1QEeiJrsdx4E0AFg" name="this_magnetic_alarm_sensor" category="device">
+    <featureInstance xmi:id="_uP1QIf1QEeiJrsdx4E0AFg" name="alarm_set_off" srcConnectionInstance="_uQNqoP1QEeiJrsdx4E0AFg" category="eventPort" direction="out">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedEventPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_uP1QIv1QEeiJrsdx4E0AFg" name="this_camera" category="device">
+    <featureInstance xmi:id="_uP13MP1QEeiJrsdx4E0AFg" name="video_stream" srcConnectionInstance="_uQNqov1QEeiJrsdx4E0AFg" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_uP13Mf1QEeiJrsdx4E0AFg" name="camera_on_off" dstConnectionInstance="_uQO4wP1QEeiJrsdx4E0AFg" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedEventPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.2"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_uP13Mv1QEeiJrsdx4E0AFg" name="this_alarm_unit" category="device">
+    <featureInstance xmi:id="_uP13M_1QEeiJrsdx4E0AFg" name="alarm_on_off" dstConnectionInstance="_uQO4wv1QEeiJrsdx4E0AFg" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedEventPort.0"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.3"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_uP13NP1QEeiJrsdx4E0AFg" name="this_controller" category="process">
+    <featureInstance xmi:id="_uP2eQP1QEeiJrsdx4E0AFg" name="video_from_camera" dstConnectionInstance="_uQNqov1QEeiJrsdx4E0AFg">
+      <feature xsi:type="aadl2:DataPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_uP2eQf1QEeiJrsdx4E0AFg" name="motion_in" dstConnectionInstance="_uQMcgP1QEeiJrsdx4E0AFg" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_uP2eQv1QEeiJrsdx4E0AFg" name="magnetic_in" dstConnectionInstance="_uQNqoP1QEeiJrsdx4E0AFg" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_uP2eQ_1QEeiJrsdx4E0AFg" name="camera_out" srcConnectionInstance="_uQO4wP1QEeiJrsdx4E0AFg" category="eventPort" direction="out">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.2"/>
+    </featureInstance>
+    <featureInstance xmi:id="_uP2eRP1QEeiJrsdx4E0AFg" name="alarm_out" srcConnectionInstance="_uQO4wv1QEeiJrsdx4E0AFg" category="eventPort" direction="out">
+      <feature xsi:type="aadl2:EventPort" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.3"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <connectionInstance xmi:id="_uQMcgP1QEeiJrsdx4E0AFg" name="this_motion_sensor.motion_detected -> this_controller.motion_in" complete="true" kind="portConnection" destination="_uP2eQf1QEeiJrsdx4E0AFg" source="_uP0pEP1QEeiJrsdx4E0AFg">
+    <connectionReference xmi:id="_uQMcgf1QEeiJrsdx4E0AFg" context="_uPi8QP1QEeiJrsdx4E0AFg" source="_uP0pEP1QEeiJrsdx4E0AFg" destination="_uP2eQf1QEeiJrsdx4E0AFg">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_uQNqoP1QEeiJrsdx4E0AFg" name="this_magnetic_alarm_sensor.alarm_set_off -> this_controller.magnetic_in" complete="true" kind="portConnection" destination="_uP2eQv1QEeiJrsdx4E0AFg" source="_uP1QIf1QEeiJrsdx4E0AFg">
+    <connectionReference xmi:id="_uQNqof1QEeiJrsdx4E0AFg" context="_uPi8QP1QEeiJrsdx4E0AFg" source="_uP1QIf1QEeiJrsdx4E0AFg" destination="_uP2eQv1QEeiJrsdx4E0AFg">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_uQNqov1QEeiJrsdx4E0AFg" name="this_camera.video_stream -> this_controller.video_from_camera" complete="true" kind="portConnection" destination="_uP2eQP1QEeiJrsdx4E0AFg" source="_uP13MP1QEeiJrsdx4E0AFg">
+    <connectionReference xmi:id="_uQNqo_1QEeiJrsdx4E0AFg" context="_uPi8QP1QEeiJrsdx4E0AFg" source="_uP13MP1QEeiJrsdx4E0AFg" destination="_uP2eQP1QEeiJrsdx4E0AFg">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_uQO4wP1QEeiJrsdx4E0AFg" name="this_controller.camera_out -> this_camera.camera_on_off" complete="true" kind="portConnection" destination="_uP13Mf1QEeiJrsdx4E0AFg" source="_uP2eQ_1QEeiJrsdx4E0AFg">
+    <connectionReference xmi:id="_uQO4wf1QEeiJrsdx4E0AFg" context="_uPi8QP1QEeiJrsdx4E0AFg" source="_uP2eQ_1QEeiJrsdx4E0AFg" destination="_uP13Mf1QEeiJrsdx4E0AFg">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_uQO4wv1QEeiJrsdx4E0AFg" name="this_controller.alarm_out -> this_alarm_unit.alarm_on_off" complete="true" kind="portConnection" destination="_uP13M_1QEeiJrsdx4E0AFg" source="_uP2eRP1QEeiJrsdx4E0AFg">
+    <connectionReference xmi:id="_uQO4w_1QEeiJrsdx4E0AFg" context="_uPi8QP1QEeiJrsdx4E0AFg" source="_uP2eRP1QEeiJrsdx4E0AFg" destination="_uP13M_1QEeiJrsdx4E0AFg">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/syst.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <systemOperationMode xmi:id="_uP6vsP1QEeiJrsdx4E0AFg" name="No Modes"/>
+  <systemImplementation href="../packages/syst.aadl#syst::SecuritySystem.with_devices"/>
+</instance:SystemInstance>
